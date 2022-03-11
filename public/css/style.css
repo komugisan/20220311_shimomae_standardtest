@@ -1,0 +1,382 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.center-block {
+    margin: 0 auto;
+}
+
+.contact__form,
+.contact__check {
+    width: 700px;
+}
+
+.contacts__check__contents {
+    width: 80%;
+}
+
+.contact__form .red {
+    color: red;
+    margin-left: 5px;
+}
+
+.contact__form input,
+.contact__form textarea {
+    padding: 10px 0 10px 10px;
+    width: 100%;
+}
+
+.contact__form .example__text {
+    color: #666666;
+}
+
+.contact__form__table {
+    width: 100%;
+}
+
+.contact__form th,
+.contact__check th {
+    text-align: left;
+    margin-right: 10px;
+    vertical-align: top;
+    padding-top: 5px;
+    width: 25%;
+}
+
+.contact__form__table .contactform__name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__form__table .contactform__gender,
+.management__searchform__gender {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.contact__form .contactform__input__name {
+    width: 100%;
+}
+
+.contact__form .contactform__input__gender,
+.management__searchform__gender {
+    width: auto;
+}
+
+.contactform__gender label,
+.management__searchform__gender label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 45px;
+}
+
+.contactform__gender label::before,
+.contactform__gender label::after,
+.management__searchform__gender label::before,
+.management__searchform__gender label::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.contactform__gender label::before,
+.management__searchform__gender label::before {
+    background-color: #fff;
+    border: 1px solid #666666;
+    width: 30px;
+    height: 30px;
+    left: 5px;
+}
+
+.contactform__gender label::after,
+.management__searchform__gender label::after {
+    background-color: #000000;
+    opacity: 0;
+    width: 10px;
+    height: 10px;
+    left: 16px;
+}
+
+input[type="radio"]:checked + label::after {
+    opacity: 1;
+}
+
+.contactform__gender .men {
+    margin-right: 20px;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.form__btn {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.form__btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact__form input.form__btn {
+    width: 20%;
+    padding: 10px;
+}
+
+.lastname,
+.firstname {
+    width: 49%;
+}
+
+.postmark__input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postmark {
+    font-weight: bold;
+    width: 20px;
+    display: inline-block;
+}
+
+.postmark__input > .contactform__input__postcode {
+    width: 93%;
+}
+
+.contact__check th {
+    padding: 30px 0;
+}
+
+.contact__check td {
+    padding: 30px 0;
+}
+
+.message__fix {
+    color: #000000;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #000000;
+}
+
+/*送信後*/
+.message__send {
+    text-align: center;
+    width: 70%;
+    position: relative;
+    top: 35vh;
+}
+
+.thx__message {
+    margin-bottom: 50px;
+}
+
+/*管理システム*/
+
+.management__search__form {
+    width: 80%;
+    padding: 30px;
+    border: 1px solid #000000;
+    margin-bottom: 50px;
+}
+
+.management__searchform__table .title {
+    font-weight: bold;
+    margin-right: 100px;
+}
+
+.management__searchform__table .title.shortmargin {
+    margin-right: 30px;
+}
+
+.management__searchform__table {
+    width: 100%;
+}
+
+.management__search__form input {
+    padding: 10px 0 10px 10px;
+}
+
+.management__searchform__table th {
+    vertical-align: middle;
+}
+
+.management__searchform__raw1 {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    align-items: center;
+}
+
+.management__searchform__gender .men {
+    margin: 0 20px;
+}
+
+.management__searchform__raw2 {
+    margin-top: 20px;
+}
+
+.management__searchform__created {
+    display: flex;
+    align-items: center;
+}
+
+.searchdate__input {
+    width: 80%;
+}
+
+.searchdate__input .created {
+    width: 350px;
+}
+
+.management__searchform__raw3 {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.management__searchform__name {
+    margin-right: 30px;
+}
+
+.searchform__input__name,
+.searchform__input__email {
+    width: 350px;
+}
+
+.management__searchform__gender {
+    width: 350px;
+    margin-bottom: 0;
+}
+.management__search__form input.form__btn {
+    padding: 10px;
+    width: 20%;
+}
+
+.management__list__title__line {
+    font-weight: bold;
+    border-bottom: 1px solid #000000;
+    padding: 0;
+}
+
+.management__list__title {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.contacts__check__contents .id {
+    width: 7%;
+}
+
+.contacts__check__contents .name {
+    width: 12%;
+}
+
+.contacts__check__contents .gender {
+    width: 7%;
+}
+
+.contacts__check__contents .email {
+    width: 24%;
+}
+
+.contacts__check__contents .opinion {
+    width: 40%;
+}
+
+.contacts__check__contents .delete {
+    width: 10%;
+}
+
+.management__message__view {
+    padding: 0 10px;
+}
+
+.management___message__list {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.management___message__list .all_opinion {
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    width: 50%;
+    height: 140px;
+    overflow-wrap: normal;
+    right: 0;
+    top: -140px;
+    z-index: 9999;
+    border: #000000 1px solid;
+}
+
+.management___message__list .form__btn {
+    margin-top: 0;
+    height: 100%;
+    width: 50%;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 4px 0;
+}
+
+/*ページネーション*/
+
+.pagination__line {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.pagination {
+    display: flex;
+}
+
+.pagination li {
+    border: 1px solid #9c9c9c;
+    padding: 3px 10px;
+}
+
+.pagination li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.pagination .active {
+    background-color: #000000;
+    color: #ffffff;
+}
